@@ -1,0 +1,1193 @@
+[
+  {
+    "question": "What are types of Machine Learning?",
+    "keywords": [
+      "types of ml",
+      "ml types",
+      "machine learning types",
+      "types",
+      "prakar",
+      "types of machine learning",
+      "categories of machine learning",
+      "branches of machine learning",
+      "how many types of ml"
+    ],
+    "answer": "There are 3 main types of Machine Learning: 1. Supervised Learning uses labeled data where the algorithm learns from input-output pairs to make predictions on unseen data, including classification and regression tasks like spam filtering and price prediction. 2. Unsupervised Learning finds hidden patterns, groupings, and structures in unlabeled data without explicit guidance, such as customer clustering via K-Means and dimensionality reduction via Principal Component Analysis. 3. Reinforcement Learning learns optimal behaviors through trial, error, and feedback in a dynamic environment where an agent receives rewards or penalties for its actions, widely used in robotics, gaming, and autonomous navigation. Additionally, semi-supervised learning combines small labeled data with large unlabeled data, while self-supervised learning generates pseudo-labels from data itself. Understanding these distinct paradigms allows machine learning engineers and data scientists to choose the appropriate model architecture and training strategy for solving complex real-world analytical problems effectively."
+  },
+  {
+    "question": "What is Machine Learning and how does it work?",
+    "keywords": [
+      "machine learning",
+      "what is machine learning",
+      "what is ml",
+      "how ml works",
+      "definition of machine learning",
+      "concept of machine learning",
+      "ml basics"
+    ],
+    "answer": "Machine Learning (ML) is a subfield of artificial intelligence focused on building mathematical algorithms that learn from empirical data rather than following static, handcrafted programming rules. In traditional programming, developers write explicit logic that maps input data directly to deterministic outputs. In contrast, machine learning inverts this paradigm by analyzing example inputs paired with outputs to automatically discover the underlying mapping relationships. The standard machine learning pipeline begins with data collection and preprocessing, followed by feature extraction and engineering. Next, a model architecture is chosen and trained by iteratively adjusting internal mathematical parameters to minimize the difference between predictions and actual values using an objective loss function. Optimization techniques like gradient descent systematically refine the model until convergence. Once evaluated on separate validation and test sets to guarantee generalization to unseen real-world data, the model is deployed to make reliable inferences and drive data-driven decision-making."
+  },
+  {
+    "question": "What is Supervised Learning in Machine Learning?",
+    "keywords": [
+      "supervised learning",
+      "supervised ml",
+      "labeled data",
+      "supervised learning definition",
+      "what is supervised learning",
+      "supervised algorithm"
+    ],
+    "answer": "Supervised Learning is a primary machine learning paradigm where models are trained using labeled datasets, meaning each training sample consists of input features paired with a known ground-truth target label. The model makes predictions on the input features, compares them against the ground truth using a loss function, and adjusts its internal parameters through optimization algorithms like gradient descent to minimize prediction error. Supervised learning is divided into two major task categories: classification and regression. Classification algorithms predict discrete categorical labels, such as identifying whether an email is spam or diagnosing benign versus malignant tumors. Regression algorithms predict continuous numerical values, such as forecasting real estate prices, stock trends, or temperatures. Common supervised algorithms include Linear Regression, Logistic Regression, Decision Trees, Random Forests, Support Vector Machines, and Deep Neural Networks. Supervised learning requires substantial labeled training data to generalize accurately to unseen test examples."
+  },
+  {
+    "question": "What is Unsupervised Learning in Machine Learning?",
+    "keywords": [
+      "unsupervised learning",
+      "unsupervised ml",
+      "unlabeled data",
+      "clustering",
+      "unsupervised learning definition",
+      "what is unsupervised learning"
+    ],
+    "answer": "Unsupervised Learning is a machine learning paradigm that discovers hidden patterns, underlying structures, and natural distributions within unlabeled datasets without human supervision or predefined target outputs. Since ground truth labels are absent, algorithms infer relationships by evaluating mathematical distances, density variations, and statistical correlations among data points. The most prominent unsupervised tasks are clustering, dimensionality reduction, and association rule learning. Clustering algorithms, such as K-Means, DBSCAN, and Hierarchical Clustering, group similar observations together for applications like customer segmentation and anomaly detection. Dimensionality reduction techniques, such as Principal Component Analysis (PCA) and t-SNE, compress high-dimensional feature spaces while preserving essential variance for visualization and noise elimination. Association rule mining algorithms like Apriori discover co-occurrence relationships in transactional market baskets. Unsupervised learning is invaluable for exploratory data analysis because acquiring large-scale unlabeled datasets is significantly cheaper and faster than obtaining human-annotated labels."
+  },
+  {
+    "question": "What is Reinforcement Learning in Machine Learning?",
+    "keywords": [
+      "reinforcement learning",
+      "rl",
+      "agent",
+      "environment",
+      "reward",
+      "policy",
+      "what is reinforcement learning",
+      "reinforcement"
+    ],
+    "answer": "Reinforcement Learning (RL) is a dynamic machine learning paradigm where an autonomous software agent learns to make optimal sequential decisions by interacting directly with an environment to maximize cumulative numerical rewards. Rather than being told which actions to take, the agent explores states, selects actions, and receives numerical feedback in the form of rewards for favorable outcomes or penalties for undesirable behaviors. The learning process balances exploration of novel actions against exploitation of proven strategies to formulate an optimal policy mapping states to actions. Key mathematical components include the Markov Decision Process (MDP) framework, value functions, and discount factors for future rewards. Prominent algorithms include Q-Learning, Deep Q-Networks (DQN), Policy Gradients, and Proximal Policy Optimization (PPO). Reinforcement learning excels in autonomous systems, robotics manipulation, algorithmic trading, self-driving vehicle path planning, and mastering complex games such as chess, Go, and video games."
+  },
+  {
+    "question": "What is Semi-Supervised Learning?",
+    "keywords": [
+      "semi-supervised learning",
+      "semi supervised",
+      "pseudo labeling",
+      "partially labeled",
+      "semi supervised ml"
+    ],
+    "answer": "Semi-Supervised Learning is an effective machine learning approach that bridges the gap between supervised and unsupervised learning by training on a small amount of labeled data combined with a large volume of unlabeled data. In many practical industries, acquiring unlabeled data is inexpensive and abundant, whereas obtaining accurate human annotations is costly, time-consuming, and requires specialized domain expertise. Semi-supervised algorithms leverage structural properties learned from the abundant unlabeled instances to guide and enhance the decision boundaries initially formed by the scarce labeled examples. Popular techniques include pseudo-labeling, where a model trained on labeled data predicts labels for confident unlabeled samples, and consistency regularization, which enforces stable predictions under small perturbations. Graph-based methods also propagate label information across similarity graphs connecting data points. Semi-supervised learning is widely applied in medical image analysis, protein structure prediction, speech recognition, and web content categorization."
+  },
+  {
+    "question": "What is Self-Supervised Learning?",
+    "keywords": [
+      "self-supervised learning",
+      "self supervised",
+      "pretext task",
+      "contrastive learning",
+      "self-supervised"
+    ],
+    "answer": "Self-Supervised Learning is a cutting-edge machine learning paradigm where models generate their own supervisory training signals directly from raw, unannotated data by solving pretext tasks. Instead of requiring human-annotated labels, the algorithm withholds a portion of the input data and trains the neural network to predict the missing information from the remaining context. In Natural Language Processing, famous models like BERT and GPT utilize self-supervised masked language modeling and next-token prediction on trillions of unlabelled internet words to acquire rich semantic representations. In Computer Vision, self-supervised techniques such as contrastive learning (SimCLR, MoCo) and masked autoencoders reconstruct masked image patches or maximize agreement between differently augmented views of identical images. Once pre-trained on vast unannotated corpora, these representations are fine-tuned on downstream tasks using minimal labeled data, dramatically outperforming models trained exclusively from scratch with purely supervised regimes."
+  },
+  {
+    "question": "What is Overfitting and how do you prevent it?",
+    "keywords": [
+      "overfitting",
+      "prevent overfitting",
+      "overfit",
+      "high variance",
+      "how to prevent overfitting",
+      "overfitting in machine learning"
+    ],
+    "answer": "Overfitting is a common machine learning failure mode that occurs when a complex model learns training data too well, capturing random noise, idiosyncratic outliers, and spurious correlations instead of underlying true generalizable patterns. Consequently, an overfitted model achieves near-perfect accuracy on the training dataset but performs poorly on unseen validation and test data, demonstrating high variance. To prevent overfitting, practitioners employ several regularization strategies: 1. Regularization techniques such as L1 (Lasso) and L2 (Ridge) add penalty terms to the loss function to constrain weight magnitudes. 2. Dropout randomly deactivates neurons during neural network training to prevent co-adaptation. 3. Early stopping terminates training when validation loss begins to degrade. 4. Data augmentation introduces synthetic variations to broaden training diversity. 5. Cross-validation evaluates model robustness across multiple data splits. 6. Simplifying model architecture and pruning decision trees reduces hypothesis complexity."
+  },
+  {
+    "question": "What is Underfitting in Machine Learning?",
+    "keywords": [
+      "underfitting",
+      "underfit",
+      "high bias",
+      "what is underfitting",
+      "underfitting in ml",
+      "prevent underfitting"
+    ],
+    "answer": "Underfitting occurs when a machine learning model is too simplistic to capture the underlying relationships, structures, and trends present in the training data. As a consequence, an underfitted model exhibits high bias and suffers from unacceptably high error rates on both the training dataset and new, unseen validation data. Typical causes of underfitting include choosing a model family that lacks sufficient expressive capacity, such as fitting a straight line using linear regression to strongly non-linear data distributions, providing an insufficient number of training features, or excessively constraining the model with overly aggressive regularization parameters. To resolve underfitting, machine learning engineers should increase model complexity, such as adding hidden layers and neurons to neural networks, incorporating non-linear feature interactions and polynomial terms, training for more optimization epochs, or reducing regularization strength to allow the model to learn meaningful patterns."
+  },
+  {
+    "question": "What is the Bias-Variance Tradeoff?",
+    "keywords": [
+      "bias-variance tradeoff",
+      "bias variance",
+      "bias vs variance",
+      "bias",
+      "variance",
+      "tradeoff",
+      "trade-off"
+    ],
+    "answer": "The Bias-Variance Tradeoff is a foundational theoretical concept in machine learning describing the tension between two competing sources of prediction error that govern a model's generalization capability. Bias represents error introduced by approximating a complex real-world phenomenon with an overly simplistic model; high bias leads to underfitting and systematically inaccurate predictions across all datasets. Variance represents the model's sensitivity to small fluctuations and random noise within the training set; high variance leads to overfitting, where the model performs brilliantly on training data but fails miserably on test data. Total expected prediction error is the sum of squared bias, variance, and irreducible environmental noise. Achieving optimal generalization requires finding the sweet spot where model complexity is balanced so that bias and variance are simultaneously minimized, maximizing performance on completely unseen test data."
+  },
+  {
+    "question": "What is Cross-Validation and K-Fold Cross-Validation?",
+    "keywords": [
+      "cross-validation",
+      "k-fold",
+      "k-fold cross validation",
+      "cross validation",
+      "cv",
+      "k fold",
+      "model validation"
+    ],
+    "answer": "Cross-Validation is a vital statistical resampling technique used to evaluate the true generalization performance of machine learning models and safeguard against evaluation bias caused by fortunate or unfortunate train-test splits. In standard K-Fold Cross-Validation, the full dataset is partitioned randomly into K equally sized, non-overlapping subsets or folds. The model is trained K separate times; in each iteration, K-1 folds serve as training data while the remaining single fold functions as the validation set. After completing all K iterations, the evaluation metric scores (such as accuracy, F1-score, or mean squared error) are averaged to generate an unbiased estimate of model performance along with variance metrics. Stratified K-Fold preserves original class distribution proportions across folds for imbalanced datasets, while time-series cross-validation respects temporal sequencing without lookahead leakage. Cross-validation ensures reliable hyperparameter tuning and model selection."
+  },
+  {
+    "question": "What is Linear Regression and how does it work?",
+    "keywords": [
+      "linear regression",
+      "linear model",
+      "ordinary least squares",
+      "ols",
+      "regression",
+      "what is linear regression"
+    ],
+    "answer": "Linear Regression is a fundamental supervised learning algorithm used to model the linear mathematical relationship between one or more independent continuous predictor features and a continuous dependent target variable. The algorithm posits that the target is a weighted linear combination of input features plus an intercept bias and residual error term. In Simple Linear Regression with one predictor, it estimates the slope and intercept of a straight line, while Multiple Linear Regression calculates an optimal multidimensional hyperplane. The parameters are estimated using Ordinary Least Squares (OLS) or gradient descent to minimize the residual sum of squared differences between predicted values and actual ground-truth observations. Key underlying assumptions include linearity, homoscedasticity of residuals, independence of observations, and absence of severe multicollinearity. Linear regression remains widely prized for its high interpretability, computational speed, and effectiveness in econometrics and predictive modeling."
+  },
+  {
+    "question": "What is Logistic Regression in Machine Learning?",
+    "keywords": [
+      "logistic regression",
+      "sigmoid function",
+      "binary classification",
+      "log odds",
+      "logistic",
+      "classification"
+    ],
+    "answer": "Logistic Regression is a foundational supervised classification algorithm used to predict the probability of a categorical outcome, most commonly binary classification tasks like identifying fraud or disease diagnosis. Despite its regression moniker, it is strictly a classification model. Rather than fitting an unbounded straight line that could produce predictions outside the valid probability range, Logistic Regression passes a linear combination of input features through the non-linear Sigmoid activation function. The sigmoid transforms any real-valued number into a calibrated probability bounded strictly between 0 and 1. If the resulting probability surpasses a defined decision threshold (typically 0.5), the positive class is predicted. Logistic Regression parameters are optimized using Maximum Likelihood Estimation (MLE) with binary cross-entropy loss. It provides highly interpretable coefficients representing log-odds ratios, making it exceptionally popular in healthcare, banking, and scoring systems."
+  },
+  {
+    "question": "How does a Decision Tree algorithm work?",
+    "keywords": [
+      "decision tree",
+      "decision trees",
+      "cart",
+      "gini impurity",
+      "information gain",
+      "splitting criterion",
+      "tree"
+    ],
+    "answer": "A Decision Tree is a non-parametric supervised learning algorithm that performs classification and regression by partitioning the input feature space into smaller, rectangular regions through a sequence of hierarchical binary if-then rules. Beginning at the root node containing all training instances, the algorithm evaluates all candidate features and split thresholds to find the partition that maximizes purity in the resulting child nodes. For classification trees, splitting criteria include Gini Impurity and Information Gain derived from Shannon Entropy; for regression trees, Mean Squared Error reduction is minimized. This recursive splitting continues until reaching stopping criteria such as maximum tree depth, minimum leaf samples, or pure terminal leaves. While decision trees offer intuitive visual interpretability and require zero feature normalization, unconstrained trees are notorious for severe overfitting, necessitating tree pruning, depth restrictions, or ensemble methods like Random Forests."
+  },
+  {
+    "question": "What is a Random Forest and how does it work?",
+    "keywords": [
+      "random forest",
+      "bagging",
+      "ensemble",
+      "random forests",
+      "bootstrap aggregating",
+      "decision trees ensemble"
+    ],
+    "answer": "A Random Forest is a powerful ensemble learning algorithm that constructs a large multitude of decorrelated decision trees during training to achieve high accuracy and eliminate individual tree overfitting. It combines two core randomization principles: Bootstrap Aggregating (Bagging) and Random Subspace Feature Selection. First, each individual tree is trained on an independently drawn bootstrap sample created by randomly sampling training data with replacement. Second, at every node split within each tree, only a random subset of available features is considered rather than the full feature set, which prevents dominant features from creating identical trees. For classification tasks, final predictions are determined by majority voting across all ensemble trees; for regression tasks, individual continuous predictions are averaged. Random Forests handle non-linear interactions, resist noise, manage missing values, and yield feature importance metrics without extensive hyperparameter tuning."
+  },
+  {
+    "question": "What is Gradient Boosting in Machine Learning?",
+    "keywords": [
+      "gradient boosting",
+      "gbm",
+      "boosting",
+      "residual learning",
+      "gradient boosted trees",
+      "what is gradient boosting"
+    ],
+    "answer": "Gradient Boosting is a premier ensemble machine learning algorithm that builds predictive models sequentially by combining multiple weak learners—typically shallow decision trees called decision stumps—into a single highly accurate predictor. Unlike bagging where trees are trained independently in parallel, boosting constructs trees in serial succession. Each new tree is explicitly trained to predict and minimize the pseudo-residuals or negative gradients of the loss function produced by the existing ensemble. By calculating the gradient of an arbitrary differentiable loss function (such as squared error for regression or logarithmic loss for classification), the algorithm takes gradient descent steps in functional space. Individual trees are scaled by a shrinkage learning rate parameter to prevent overfitting and encourage gradual convergence. Gradient boosting delivers state-of-the-art predictive performance on structured tabular datasets across diverse competitive data science domains."
+  },
+  {
+    "question": "What is XGBoost and why is it so popular?",
+    "keywords": [
+      "xgboost",
+      "extreme gradient boosting",
+      "tree boosting",
+      "xgboost algorithm",
+      "what is xgboost",
+      "boosted trees"
+    ],
+    "answer": "XGBoost (Extreme Gradient Boosting) is an optimized, highly scalable distributed gradient boosting library engineered for exceptional computational efficiency and state-of-the-art predictive accuracy. It gained immense popularity by dominating competitive machine learning platforms like Kaggle. XGBoost enhances traditional gradient boosting through several algorithmic innovations: 1. It utilizes second-order Taylor series expansions of the loss function, incorporating both first-order gradients and second-order Hessians for accelerated convergence. 2. It integrates built-in L1 (Lasso) and L2 (Ridge) regularization terms directly into the objective function to penalize model complexity and prevent overfitting. 3. It features an automated sparsity-aware split-finding algorithm that seamlessly handles missing data values. 4. It supports block-level parallelization, cache-aware data access structures, and out-of-core computing for enormous datasets. XGBoost consistently outperforms conventional models on structured tabular data tasks."
+  },
+  {
+    "question": "What is LightGBM and how does it differ from XGBoost?",
+    "keywords": [
+      "lightgbm",
+      "light gbm",
+      "leaf-wise",
+      "goss",
+      "efb",
+      "what is lightgbm",
+      "lightgbm vs xgboost"
+    ],
+    "answer": "LightGBM is a high-performance gradient boosting framework developed by Microsoft that specializes in ultra-fast training speeds, reduced memory consumption, and superior scaling on massive tabular datasets. It differs fundamentally from XGBoost through two core architectural innovations: Gradient-based One-Side Sampling (GOSS) and Exclusive Feature Bundling (EFB). GOSS retains instances with large gradients while randomly downsampling instances with small gradients, maintaining accurate information gain estimation with substantially fewer data points. EFB bundles mutually exclusive sparse features together into dense composite features to reduce feature dimensionality. Furthermore, LightGBM grows decision trees leaf-wise (best-first) by choosing the leaf that achieves the largest loss reduction, rather than level-wise (depth-first) across all nodes like classical algorithms. While leaf-wise growth accelerates convergence, it requires setting maximum depth constraints to prevent overfitting on smaller datasets."
+  },
+  {
+    "question": "What is CatBoost and when should you use it?",
+    "keywords": [
+      "catboost",
+      "categorical features",
+      "ordered boosting",
+      "what is catboost",
+      "catboost vs xgboost"
+    ],
+    "answer": "CatBoost is an advanced open-source gradient boosting library developed by Yandex that delivers state-of-the-art accuracy with minimal hyperparameter tuning, specifically excelling on datasets containing rich categorical features. Traditional gradient boosting algorithms require manual one-hot encoding or mean-target encoding that risks target leakage and overfitting. CatBoost resolves this through Ordered Target Statistics, computing target encodings on random permutations of training data so each sample's encoding depends strictly on preceding samples. Additionally, CatBoost implements Ordered Boosting to eliminate prediction shift caused by target leakage inherent in standard gradient boosting implementations. It constructs symmetric (oblivious) decision trees where identical splitting conditions apply across entire levels, yielding lightning-fast inference execution on CPU and GPU architectures. You should use CatBoost whenever working with complex tabular data containing high-cardinality categorical variables."
+  },
+  {
+    "question": "What is a Support Vector Machine (SVM)?",
+    "keywords": [
+      "support vector machine",
+      "svm",
+      "hyperplane",
+      "kernel trick",
+      "support vectors",
+      "margin maximization",
+      "what is svm"
+    ],
+    "answer": "A Support Vector Machine (SVM) is a robust supervised machine learning algorithm used for classification and regression that finds the optimal separating hyperplane with maximum margin between different classes in a high-dimensional feature space. The margin is the perpendicular distance between the decision hyperplane and the closest data points belonging to either class, known as support vectors. Maximizing this margin provides the model with strong theoretical generalization guarantees that resist overfitting. When classes are not linearly separable in their original input space, SVM employs the ingenious Kernel Trick (such as Radial Basis Function RBF, Polynomial, or Sigmoid kernels). The kernel computes inner products in an implicit, higher-dimensional transformed space without explicitly projecting the data coordinates, enabling SVM to construct complex non-linear decision boundaries efficiently. SVMs perform exceptionally well on clean, high-dimensional datasets like genomics and text classification."
+  },
+  {
+    "question": "What is the K-Nearest Neighbors (KNN) algorithm?",
+    "keywords": [
+      "k-nearest neighbors",
+      "knn",
+      "k nearest neighbors",
+      "lazy learning",
+      "euclidean distance",
+      "what is knn"
+    ],
+    "answer": "K-Nearest Neighbors (KNN) is an intuitive, non-parametric, lazy supervised learning algorithm used for classification and regression tasks. It is classified as a lazy learner because it undergoes virtually no explicit training phase; instead, it stores the entire training dataset in memory. When a new query point requires prediction, the algorithm calculates mathematical distances (typically Euclidean, Manhattan, or Minkowski distance) between the query point and all stored training samples. It identifies the K closest neighbors and assigns a prediction: for classification, it performs majority voting among the neighbors; for regression, it computes the mean or weighted average of their continuous targets. The choice of K is critical: small K values increase sensitivity to noise (overfitting), while large K values smooth boundaries excessively (underfitting). KNN requires feature scaling and suffers from computational slowdowns in high dimensions due to the curse of dimensionality."
+  },
+  {
+    "question": "How does the Naive Bayes classifier work?",
+    "keywords": [
+      "naive bayes",
+      "bayes theorem",
+      "conditional independence",
+      "naive bayes classifier",
+      "prior probability",
+      "posterior probability"
+    ],
+    "answer": "The Naive Bayes classifier is a probabilistic supervised learning algorithm rooted in Bayes' Theorem of conditional probability. It calculates the posterior probability of an observation belonging to a specific class given its observed feature vector. The algorithm is called 'naive' because it makes the strong, simplifying assumption that all input features are conditionally independent of each other given the class label. Although this independence assumption is rarely true in real-world scenarios, Naive Bayes performs remarkably well in practice, particularly in high-dimensional text classification domains like spam detection, document filtering, and sentiment analysis. Variants include Gaussian Naive Bayes for continuous normally distributed features, Multinomial Naive Bayes for discrete word frequency counts, and Bernoulli Naive Bayes for binary presence indicators. Naive Bayes requires very little training data, trains nearly instantaneously, and scales effortlessly to enormous corpora."
+  },
+  {
+    "question": "What is K-Means Clustering and how does it work?",
+    "keywords": [
+      "k-means",
+      "kmeans",
+      "clustering",
+      "k-means clustering",
+      "centroids",
+      "unsupervised clustering",
+      "elbow method"
+    ],
+    "answer": "K-Means Clustering is a popular unsupervised partitioning algorithm that groups unlabelled data points into K distinct, non-overlapping clusters based on geometric proximity. The user specifies K in advance. The algorithm operates through an iterative optimization procedure: 1. It initializes K cluster centroids randomly or using K-Means++ initialization to ensure well-dispersed starting points. 2. Assignment Step: Each data point is assigned to its nearest centroid according to Euclidean distance. 3. Update Step: Each centroid is recalculated as the arithmetic mean of all data points assigned to that cluster. Steps 2 and 3 repeat until centroids stabilize and within-cluster sum of squared errors (inertia) converges. The optimal number of clusters K is typically evaluated using the Elbow Method or Silhouette Analysis. K-Means assumes spherical clusters of similar size and is sensitive to outliers and initial centroid placement."
+  },
+  {
+    "question": "What is Hierarchical Clustering?",
+    "keywords": [
+      "hierarchical clustering",
+      "dendrogram",
+      "agglomerative clustering",
+      "divisive clustering",
+      "linkage criteria"
+    ],
+    "answer": "Hierarchical Clustering is an unsupervised clustering technique that builds a nested hierarchy of clusters represented visually as a tree structure called a dendrogram. It is categorized into two approaches: Agglomerative (bottom-up) and Divisive (top-down). In Agglomerative clustering, each data point begins as an individual single-element cluster. At each successive iteration, the two most mathematically similar clusters are merged based on a predefined distance metric and linkage criterion until all points belong to a single root cluster. Common linkage criteria include Single Linkage (minimum pairwise distance), Complete Linkage (maximum distance), Average Linkage (mean distance), and Ward's Linkage (minimizing within-cluster variance increase). Hierarchical clustering eliminates the need to specify the number of clusters in advance, as users can cut the dendrogram at any desired threshold height, though its cubic computational complexity limits scalability on massive datasets."
+  },
+  {
+    "question": "What is DBSCAN Clustering and when is it preferred?",
+    "keywords": [
+      "dbscan",
+      "density-based clustering",
+      "core points",
+      "eps",
+      "minpts",
+      "dbscan clustering",
+      "density clustering"
+    ],
+    "answer": "DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a leading unsupervised clustering algorithm that groups points based on spatial density rather than centroid distances. Unlike K-Means, DBSCAN does not require specifying the number of clusters beforehand and can discover arbitrarily shaped clusters (such as rings or intertwined spirals) while identifying anomalous noise points. It relies on two core parameters: Epsilon (eps), the neighborhood search radius, and MinPts, the minimum number of points required within that radius. Points are classified into three types: Core Points (having at least MinPts within eps), Border Points (reachable from a core point but possessing fewer than MinPts), and Noise Points (neither core nor border). DBSCAN is preferred when dealing with non-convex cluster shapes, spatial geospatial data, and noisy environments where outlier detection is paramount."
+  },
+  {
+    "question": "What is Principal Component Analysis (PCA)?",
+    "keywords": [
+      "pca",
+      "principal component analysis",
+      "dimensionality reduction",
+      "eigenvectors",
+      "eigenvalues",
+      "explained variance"
+    ],
+    "answer": "Principal Component Analysis (PCA) is an essential linear unsupervised dimensionality reduction technique that transforms a high-dimensional dataset of correlated features into a smaller set of uncorrelated orthogonal variables known as Principal Components. The first principal component captures the maximum possible variance present in the original dataset; each subsequent component captures the highest remaining variance under the mathematical constraint of being strictly orthogonal to all preceding components. Computationally, PCA standardizes the feature matrix, calculates the covariance matrix, and performs eigendecomposition or Singular Value Decomposition (SVD) to obtain eigenvectors (directions) and eigenvalues (magnitude of variance explained). By selecting components that collectively explain a target percentage of total variance (e.g., 95%), practitioners compress data volume, eliminate multicollinearity, eradicate noise, accelerate downstream model training, and visualize complex multidimensional data in two or three dimensions."
+  },
+  {
+    "question": "What is t-SNE and how does it work?",
+    "keywords": [
+      "t-sne",
+      "tsne",
+      "manifold learning",
+      "high dimensional visualization",
+      "t-distributed stochastic neighbor embedding"
+    ],
+    "answer": "t-SNE (t-Distributed Stochastic Neighbor Embedding) is a non-linear unsupervised dimensionality reduction technique specifically engineered for visualizing high-dimensional datasets in two or three dimensions. Unlike linear PCA which focuses on preserving global pairwise variance, t-SNE prioritizes preserving local neighborhood similarities and clustering structures. In high-dimensional space, t-SNE models pairwise similarities as conditional probabilities under a Gaussian distribution, representing the likelihood that one point would pick another as its neighbor. In the low-dimensional embedding space, it models similarities using a heavy-tailed Student's t-distribution with one degree of freedom, which effectively resolves the 'crowding problem' and prevents moderate distances from collapsing together. It minimizes the Kullback-Leibler (KL) divergence between high- and low-dimensional probability distributions via gradient descent. t-SNE excels at uncovering hidden clusters in complex biological, image, and text embedding datasets."
+  },
+  {
+    "question": "What is UMAP in dimensionality reduction?",
+    "keywords": [
+      "umap",
+      "uniform manifold approximation",
+      "manifold learning",
+      "umap vs tsne",
+      "dimensionality reduction"
+    ],
+    "answer": "UMAP (Uniform Manifold Approximation and Projection) is a state-of-the-art non-linear dimensionality reduction algorithm grounded in Riemannian geometry and algebraic topology. Similar to t-SNE, UMAP maps high-dimensional data into low-dimensional space for visualization and downstream machine learning tasks, but it surpasses t-SNE in computational efficiency and global structure preservation. UMAP assumes data points reside on a local Riemannian manifold that is locally connected. It models fuzzy simplicial sets to represent high-dimensional manifold relationships and optimizes low-dimensional representations using cross-entropy loss and stochastic gradient descent. Key advantages of UMAP include significantly faster execution times on massive datasets, superior scalability to millions of points, better preservation of distances between disparate clusters (global topology), and the ability to transform new, unseen data points into existing embeddings without recalculating the entire projection from scratch."
+  },
+  {
+    "question": "What is Feature Engineering in Machine Learning?",
+    "keywords": [
+      "feature engineering",
+      "feature extraction",
+      "feature selection",
+      "feature transformation",
+      "domain knowledge"
+    ],
+    "answer": "Feature Engineering is the foundational process of using domain expertise and data manipulation techniques to create, transform, select, and refine input variables from raw data to significantly boost machine learning model performance. Raw data is rarely optimized for mathematical algorithms; feature engineering converts raw signals into informative representations that reveal meaningful patterns. Common feature engineering workflows include: 1. Transformations: logarithmic and box-cox transforms to normalize skewed distributions. 2. Categorical Encoding: one-hot, ordinal, and target encoding. 3. Numeric Binning: grouping continuous variables into discrete intervals. 4. Interaction Features: multiplying or dividing correlated attributes (such as calculating price-per-square-foot from total price and area). 5. Temporal Features: extracting day-of-week, seasonality, and elapsed intervals from timestamps. 6. Feature Selection: filtering out redundant, uninformative, or collinear features via mutual information and importance metrics. Skillful feature engineering often yields greater accuracy gains than algorithmic model tuning."
+  },
+  {
+    "question": "What is Feature Scaling (Normalization vs Standardization)?",
+    "keywords": [
+      "feature scaling",
+      "normalization",
+      "standardization",
+      "minmaxscaler",
+      "standardscaler",
+      "scaling"
+    ],
+    "answer": "Feature Scaling is a vital data preprocessing step that rescales numerical features into a common numerical range to prevent features with large absolute magnitudes from dominating distance calculations and gradient updates. The two primary techniques are Normalization (Min-Max Scaling) and Standardization (Z-score Scaling). Normalization rescales feature values linearly into a fixed range, typically [0, 1], by subtracting the minimum value and dividing by the range; it is sensitive to extreme outliers. Standardization rescales data by subtracting the feature mean and dividing by the standard deviation, producing a distribution centered at zero with unit variance; it preserves outlier properties without bounded ranges. Feature scaling is essential for distance-sensitive algorithms like K-Nearest Neighbors, SVMs, and K-Means, as well as gradient-descent-based models like Neural Networks and Logistic Regression, ensuring smooth, rapid mathematical convergence."
+  },
+  {
+    "question": "What is One-Hot Encoding vs Label Encoding?",
+    "keywords": [
+      "one-hot encoding",
+      "label encoding",
+      "categorical encoding",
+      "dummy variables",
+      "ordinal encoding"
+    ],
+    "answer": "One-Hot Encoding and Label Encoding are the two primary techniques for converting categorical text data into numerical formats compatible with machine learning algorithms. Label Encoding assigns a unique integer (e.g., 0, 1, 2) to each distinct categorical level. It is ideal for ordinal variables where intrinsic hierarchical order exists (such as 'low', 'medium', 'high'). However, applying label encoding to nominal categories without natural ordering (such as 'red', 'green', 'blue') introduces misleading artificial mathematical relationships where models erroneously assume 'blue' (2) is greater than 'red' (0). One-Hot Encoding resolves this by creating a separate binary (0 or 1) indicator column for every unique categorical value, ensuring all categories are treated equally. However, one-hot encoding on high-cardinality features can cause severe dimensionality explosion, for which target encoding or embeddings are preferred."
+  },
+  {
+    "question": "What is the Curse of Dimensionality?",
+    "keywords": [
+      "curse of dimensionality",
+      "high dimensional data",
+      "sparse data",
+      "dimensionality",
+      "distance metrics in high dimensions"
+    ],
+    "answer": "The Curse of Dimensionality refers to the severe theoretical and computational challenges that arise when analyzing and organizing data in high-dimensional feature spaces. As the number of features (dimensions) increases linearly, the volume of the enclosing mathematical space grows exponentially, causing training data points to become extremely sparse and isolated from one another. In high dimensions, the mathematical distances between any pair of points tend to converge to approximately the same value, rendering Euclidean distance and spatial metrics ineffective for distance-based algorithms like K-Nearest Neighbors and K-Means. Furthermore, exponential data sparsity demands an exponentially larger volume of training samples to prevent overfitting and achieve statistical reliability. Mitigating the curse of dimensionality requires applying dimensionality reduction techniques like Principal Component Analysis (PCA), rigorous feature selection, regularization penalties, and domain-specific feature engineering."
+  },
+  {
+    "question": "What is the difference between a Loss Function and a Cost Function?",
+    "keywords": [
+      "loss function",
+      "cost function",
+      "objective function",
+      "loss vs cost",
+      "loss function in machine learning"
+    ],
+    "answer": "While the terms Loss Function and Cost Function are often used interchangeably in casual discourse, they possess distinct technical mathematical definitions in machine learning. A Loss Function computes the error or discrepancy between the predicted value and the true target label for a single, individual training example. Examples include squared error for one continuous prediction or binary cross-entropy for one classification sample. Conversely, a Cost Function aggregates the individual losses across an entire training dataset or mini-batch, typically calculating the average or sum of single-sample losses, often augmented by regularization penalty terms (such as L1 or L2 weight penalties) to constrain model complexity. Optimization algorithms like Gradient Descent minimize the global Cost Function with respect to model parameters across the training dataset to ensure robust generalization."
+  },
+  {
+    "question": "What is Mean Squared Error (MSE) and RMSE?",
+    "keywords": [
+      "mean squared error",
+      "mse",
+      "rmse",
+      "root mean squared error",
+      "regression metrics",
+      "squared loss"
+    ],
+    "answer": "Mean Squared Error (MSE) is a foundational regression loss function and evaluation metric that measures the average of the squared differences between predicted values and actual ground-truth observations. Squaring errors guarantees that all values are strictly positive, penalizing large residual errors significantly more severely than minor deviations due to quadratic scaling. This property makes MSE particularly advantageous when substantial outliers are critical to detect and minimize. Root Mean Squared Error (RMSE) is the square root of MSE. Taking the square root restores the metric to the original physical units of the target variable, making RMSE intuitively interpretable to data practitioners and business stakeholders alike (e.g., assessing error in dollars or kilograms rather than dollars squared). Both MSE and RMSE are continuously differentiable, enabling smooth analytical optimization via gradient descent."
+  },
+  {
+    "question": "What is Mean Absolute Error (MAE)?",
+    "keywords": [
+      "mean absolute error",
+      "mae",
+      "l1 loss",
+      "absolute error",
+      "regression evaluation metric"
+    ],
+    "answer": "Mean Absolute Error (MAE), also referred to as L1 loss, is a standard regression evaluation metric and loss function that measures the average of the absolute differences between predicted values and actual target outcomes. Unlike Mean Squared Error (MSE) which squares individual residuals, MAE applies linear penalties to all errors, treating small and large discrepancies with proportional severity. Consequently, MAE is significantly more robust to extreme outliers and skewed noise than MSE, providing a reliable measure of central error tendency when anomalous data points cannot be eradicated. Furthermore, MAE shares the exact physical units as the underlying target variable, offering direct, intuitive interpretability for stakeholders. However, because the absolute value function has a non-differentiable sharp point at zero, mathematical optimization requires specialized sub-gradient methods or smoothed approximations during gradient descent."
+  },
+  {
+    "question": "What is Binary Cross-Entropy Loss (Log Loss)?",
+    "keywords": [
+      "binary cross-entropy",
+      "log loss",
+      "cross entropy",
+      "binary classification loss",
+      "logistic loss"
+    ],
+    "answer": "Binary Cross-Entropy Loss, widely known as Logarithmic Loss or Log Loss, is the quintessential loss function used for training binary classification models whose outputs represent calibrated class probabilities (such as Logistic Regression and binary Neural Networks). Rooted in information theory and Maximum Likelihood Estimation, it measures the mathematical distance between predicted probability distributions and true binary ground-truth labels (0 or 1). Log Loss imposes heavy logarithmic penalties when the model outputs high confidence for an incorrect prediction; if the true label is 1 and the predicted probability approaches 0, the loss approaches positive infinity. This steep penalty gradient forces optimization algorithms to aggressively adjust parameter weights away from confident errors. Minimizing binary cross-entropy ensures that predicted scores represent reliable, well-calibrated probabilities rather than arbitrary classification heuristics."
+  },
+  {
+    "question": "What is Categorical Cross-Entropy Loss?",
+    "keywords": [
+      "categorical cross-entropy",
+      "multiclass loss",
+      "softmax loss",
+      "cross-entropy",
+      "multiclass classification"
+    ],
+    "answer": "Categorical Cross-Entropy Loss is the primary loss function used for training multi-class classification models where each observation belongs to exactly one of C mutually exclusive classes. Typically paired with a Softmax activation function in the output layer of neural networks, it measures the divergence between the true one-hot encoded label vector and the predicted probability distribution across all possible target classes. Mathematically, it computes the negative logarithm of the predicted probability assigned to the true ground-truth class. Just like binary log loss, it imposes severe exponential penalties when a network predicts low probability for the true class, generating strong error gradients that backpropagate through network layers to adjust connection weights. Sparse Categorical Cross-Entropy is a memory-efficient implementation that accepts integer class labels directly without requiring explicit one-hot array construction."
+  },
+  {
+    "question": "What is Gradient Descent and what are its variants?",
+    "keywords": [
+      "gradient descent",
+      "batch gradient descent",
+      "stochastic gradient descent",
+      "sgd",
+      "mini-batch gradient descent",
+      "optimization"
+    ],
+    "answer": "Gradient Descent is a primary first-order iterative optimization algorithm used to minimize differentiable objective loss functions by adjusting model parameters in the direction of steepest descent, defined by the negative gradient. The step size is governed by the learning rate. It encompasses three primary variants based on data batching: 1. Batch Gradient Descent computes the exact loss gradient across the entire training dataset before performing each parameter update; it provides stable, monotonic convergence but is computationally slow and memory-prohibitive on massive datasets. 2. Stochastic Gradient Descent (SGD) updates parameters after evaluating every single training sample; it is exceptionally fast and can escape local minima due to noisy updates, but oscillates erratically. 3. Mini-Batch Gradient Descent strikes the optimal balance by updating weights using small batches (e.g., 32 to 512 samples), combining hardware vectorization efficiency with stable convergence."
+  },
+  {
+    "question": "What is Learning Rate and why is it crucial?",
+    "keywords": [
+      "learning rate",
+      "step size",
+      "hyperparameter",
+      "learning rate schedule",
+      "lr",
+      "optimization rate"
+    ],
+    "answer": "The Learning Rate is one of the most critical hyperparameters in machine learning and deep learning, governing the step size taken along the negative gradient vector during parameter updates in gradient descent. Selecting an appropriate learning rate is crucial for training stability and success: 1. If the learning rate is too large, parameter updates take excessively drastic steps, causing the optimization trajectory to oscillate wildly, overshoot the global minimum, and potentially diverge to numerical infinity. 2. If the learning rate is too small, training progresses at an agonizingly slow pace, requiring excessive computational epochs and risking getting trapped in sub-optimal local minima or plateau regions. In modern practice, engineers employ Learning Rate Schedulers (such as cosine decay, step decay, and warm-up schedules) or adaptive optimizers like Adam and RMSprop to dynamically calibrate step sizes throughout training."
+  },
+  {
+    "question": "What is the Vanishing Gradient Problem?",
+    "keywords": [
+      "vanishing gradient",
+      "vanishing gradients",
+      "deep networks",
+      "gradient decay",
+      "sigmoid vanishing gradient"
+    ],
+    "answer": "The Vanishing Gradient Problem is a major obstacle encountered when training deep neural networks using backpropagation and gradient descent. During backpropagation, error gradients are propagated backward from the output layer to early input layers by repeated application of the calculus Chain Rule. When using saturating activation functions like Sigmoid or Tanh, whose mathematical derivatives peak at values below 0.25 and approach zero for large positive or negative inputs, repeatedly multiplying these small fractional derivatives causes the gradient to decay exponentially as it traverses backward through deeper layers. Consequently, parameters in early layers receive virtually zero gradient updates, leaving their weights static and preventing the network from learning complex hierarchical feature representations. Solutions include using non-saturating activations like ReLU, residual skip connections (ResNets), proper weight initialization (He/Xavier), and Batch Normalization."
+  },
+  {
+    "question": "What is the Exploding Gradient Problem?",
+    "keywords": [
+      "exploding gradient",
+      "gradient clipping",
+      "unstable gradients",
+      "exploding gradients",
+      "nan weights"
+    ],
+    "answer": "The Exploding Gradient Problem is an instability phenomenon in deep neural networks and recurrent neural networks (RNNs) where error gradients accumulate exponentially during backpropagation. When network weight matrices have eigenvalues greater than one, repeated matrix multiplications across multiple hidden layers cause backward gradients to grow exponentially large. These massive gradients result in colossal parameter updates that destabilize training, cause numerical overflow (resulting in NaN loss values), and push network weights into extreme values where model predictions collapse. The most common and effective remedies include Gradient Clipping, which caps the maximum norm or value of gradients before applying updates, robust weight initialization schemes like He and Xavier initialization, Layer Normalization, and using gated architectures like LSTMs and GRUs that regulate information flow through additive pathways."
+  },
+  {
+    "question": "What is L1 Regularization (Lasso Regression)?",
+    "keywords": [
+      "l1 regularization",
+      "lasso regression",
+      "lasso",
+      "sparsity",
+      "feature selection",
+      "l1 penalty"
+    ],
+    "answer": "L1 Regularization, known as Lasso (Least Absolute Shrinkage and Selection Operator) in linear models, is a regularization technique that prevents overfitting by adding a penalty proportional to the sum of the absolute values of model weights to the loss function. The severity of the penalty is controlled by the hyperparameter lambda. Because the geometric constraint region of the L1 absolute value norm has sharp diamond corners along the coordinate axes, gradient descent optimization tends to drive non-essential feature weights precisely to zero. This unique property endows L1 regularization with built-in automatic feature selection, producing sparse models that discard irrelevant and redundant predictors. Sparse models are computationally efficient and highly interpretable, making L1 regularization particularly valuable when dealing with high-dimensional datasets where only a small subset of features truly influences the target outcome."
+  },
+  {
+    "question": "What is L2 Regularization (Ridge Regression)?",
+    "keywords": [
+      "l2 regularization",
+      "ridge regression",
+      "ridge",
+      "weight decay",
+      "l2 penalty",
+      "shrinkage"
+    ],
+    "answer": "L2 Regularization, known as Ridge Regression in linear models and Weight Decay in neural network optimization, is a widespread regularization technique that discourages model overfitting by adding a penalty proportional to the sum of squared weight values to the objective loss function. Controlled by a regularization parameter lambda, the L2 penalty penalizes large weights quadratically. Unlike L1 regularization which forces coefficients to absolute zero, L2 regularization shrinks weights smoothly toward zero without ever setting them completely to zero, preserving all features while curtailing their individual impact. The spherical geometry of the L2 penalty effectively resolves multicollinearity by distributing weight evenly across highly correlated features, producing stable, robust models with lower variance. L2 regularization is standard in deep learning pipelines to keep weight matrices bounded."
+  },
+  {
+    "question": "What is ElasticNet Regularization?",
+    "keywords": [
+      "elastic net",
+      "elasticnet",
+      "l1 and l2",
+      "hybrid regularization",
+      "elasticnet regression"
+    ],
+    "answer": "ElasticNet Regularization is a hybrid regularization technique that linearly combines both L1 (Lasso) and L2 (Ridge) penalties into a single unified objective loss function. It was created to overcome the key individual limitations of Lasso and Ridge regression when analyzing complex, high-dimensional datasets. When features exhibit strong multicollinearity, pure L1 regularization tends to select one arbitrary feature from a group of correlated variables while zeroing out all others, whereas pure L2 regularization retains all features without producing a sparse model. ElasticNet resolves this dilemma by employing two tuning hyperparameters: lambda (controlling overall regularization penalty strength) and an l1_ratio mixing parameter (balancing the proportion between L1 sparsity and L2 group shrinkage). ElasticNet enables group selection of correlated features while generating a sparse, highly robust predictive model."
+  },
+  {
+    "question": "What is a Confusion Matrix in Machine Learning?",
+    "keywords": [
+      "confusion matrix",
+      "true positive",
+      "false positive",
+      "true negative",
+      "false negative",
+      "classification matrix"
+    ],
+    "answer": "A Confusion Matrix is a comprehensive tabular layout used to evaluate the true predictive performance of a classification model by comparing actual ground-truth class labels against model predictions. For binary classification, it forms a 2x2 grid consisting of four fundamental outcome quadrants: 1. True Positives (TP): correctly predicted positive instances. 2. True Negatives (TN): correctly predicted negative instances. 3. False Positives (FP), or Type I errors: negative instances incorrectly classified as positive. 4. False Negatives (FN), or Type II errors: positive instances incorrectly classified as negative. The confusion matrix serves as the foundational data source from which all vital classification metrics are derived, including Accuracy, Precision, Recall, Specificity, and F1-Score. It provides detailed insight into whether a model suffers from systematic bias toward a specific class."
+  },
+  {
+    "question": "What are Precision, Recall, and F1-Score?",
+    "keywords": [
+      "precision",
+      "recall",
+      "f1-score",
+      "f1 score",
+      "precision recall",
+      "f-measure",
+      "classification evaluation"
+    ],
+    "answer": "Precision, Recall, and F1-Score are vital evaluation metrics for classification models, particularly when evaluating imbalanced datasets where raw accuracy is misleading. Precision measures the proportion of predicted positive instances that were truly positive (TP / (TP + FP)); it answers how trustworthy positive predictions are, making it critical in spam filtering where false positives annoy users. Recall (Sensitivity) measures the proportion of actual positive instances correctly identified by the model (TP / (TP + FN)); it is essential in medical diagnoses and fraud detection where missing a positive case carries catastrophic consequences. The F1-Score is the harmonic mean of Precision and Recall (2 * (Precision * Recall) / (Precision + Recall)), providing a balanced metric that penalizes extreme disparities between precision and recall, ensuring robust model performance across imbalanced distributions."
+  },
+  {
+    "question": "What is the ROC Curve and AUC (Area Under Curve)?",
+    "keywords": [
+      "roc curve",
+      "auc",
+      "roc-auc",
+      "receiver operating characteristic",
+      "true positive rate",
+      "false positive rate"
+    ],
+    "answer": "The ROC Curve (Receiver Operating Characteristic) is a graphical plot that illustrates the diagnostic trade-off of a binary classifier across all possible classification probability thresholds. It plots the True Positive Rate (Recall / Sensitivity) on the y-axis against the False Positive Rate (1 - Specificity) on the x-axis as the decision threshold varies continuously from 1 to 0. The AUC (Area Under the ROC Curve) quantifies overall classifier performance into a single scalar value bounded between 0 and 1. An AUC of 0.5 indicates random guessing (diagonal line), while an AUC of 1.0 represents a perfect classifier. AUC possesses two critical advantages: it is scale-invariant (measuring ranking quality rather than absolute probability values) and threshold-invariant (evaluating model discriminative power independently of any specific operational decision threshold)."
+  },
+  {
+    "question": "What is the Precision-Recall Curve?",
+    "keywords": [
+      "precision-recall curve",
+      "pr curve",
+      "pr-auc",
+      "average precision",
+      "imbalanced classification evaluation"
+    ],
+    "answer": "The Precision-Recall (PR) Curve is an evaluation plot that visualizes the trade-off between Precision (y-axis) and Recall (x-axis) across varying classification decision thresholds. While the ROC curve evaluates True Positive Rate against False Positive Rate, the PR Curve focuses exclusively on the positive minority class, making it far superior to ROC-AUC when evaluating heavily imbalanced datasets (such as credit card fraud detection where positive samples constitute less than 1% of the data). In severe class imbalance, the vast volume of true negatives can keep the False Positive Rate deceptively low in ROC plots, masking poor performance. The Area Under the Precision-Recall Curve (PR-AUC), or Average Precision, provides a rigorous metric reflecting how well the model identifies true positives without returning excessive false alarms."
+  },
+  {
+    "question": "What is an Artificial Neural Network (ANN)?",
+    "keywords": [
+      "artificial neural network",
+      "ann",
+      "neural network",
+      "deep learning",
+      "layers",
+      "neurons",
+      "what is ann"
+    ],
+    "answer": "An Artificial Neural Network (ANN) is a biologically inspired computational model composed of interconnected artificial processing units called neurons organized in layered topologies: an input layer, one or more hidden layers, and an output layer. Each artificial neuron receives weighted inputs from preceding neurons, computes a weighted sum augmented by a bias term, and passes the result through a non-linear activation function to generate its output activation. By stacking multiple non-linear hidden layers, ANNs function as universal function approximators capable of modeling complex, non-linear mathematical mappings directly from raw data. Training occurs via the Backpropagation algorithm paired with gradient descent optimization, which calculates error gradients with respect to all network weights and iteratively adjusts parameters to minimize a loss function. ANNs serve as the architectural foundation of modern deep learning."
+  },
+  {
+    "question": "What is a Perceptron and Multi-Layer Perceptron (MLP)?",
+    "keywords": [
+      "perceptron",
+      "mlp",
+      "multi-layer perceptron",
+      "feedforward neural network",
+      "single layer perceptron"
+    ],
+    "answer": "A Perceptron is the simplest fundamental unit of an artificial neural network, invented by Frank Rosenblatt. It takes multiple binary or real inputs, multiplies them by learned weights, sums them with a bias, and applies a step activation function to output a binary decision. While historically foundational, a single-layer perceptron can only solve linearly separable problems and notoriously fails on non-linear functions like XOR. A Multi-Layer Perceptron (MLP) overcomes this limitation by stacking multiple layers of perceptrons: an input layer, one or more hidden layers, and an output layer, incorporating non-linear activation functions (like ReLU or Sigmoid) between layers. MLPs are fully connected feedforward networks where signals flow strictly in one direction from input to output. Trained using backpropagation, MLPs can approximate any continuous non-linear function, forming the backbone of deep learning architectures."
+  },
+  {
+    "question": "What is the ReLU Activation Function?",
+    "keywords": [
+      "relu",
+      "rectified linear unit",
+      "activation function",
+      "leaky relu",
+      "dying relu",
+      "non-linear activation"
+    ],
+    "answer": "ReLU (Rectified Linear Unit) is the most widely adopted non-linear activation function in modern deep neural networks. Mathematically defined as f(x) = max(0, x), it outputs the input value directly if positive and returns zero otherwise. ReLU offers immense advantages over classical sigmoid and tanh activations: 1. Computational Simplicity: it requires only a simple threshold comparison without demanding expensive exponential operations, accelerating training. 2. Gradient Preservation: for positive inputs, its derivative is constant (1.0), which substantially alleviates the vanishing gradient problem in deep networks. A notable limitation is the 'Dying ReLU' problem, where large negative gradients permanently push neurons into negative ranges where their derivative is zero, rendering them inactive. Variants like Leaky ReLU and Parametric ReLU address this by providing a small, non-zero slope for negative inputs."
+  },
+  {
+    "question": "What are Sigmoid and Tanh Activation Functions?",
+    "keywords": [
+      "sigmoid",
+      "tanh",
+      "hyperbolic tangent",
+      "logistic activation",
+      "activation functions",
+      "sigmoid vs tanh"
+    ],
+    "answer": "Sigmoid and Tanh (Hyperbolic Tangent) are classical non-linear mathematical activation functions extensively used in neural networks and statistical models. The Sigmoid function, f(x) = 1 / (1 + e^(-x)), maps any real number into an S-shaped curve strictly bounded between 0 and 1. It is ideal for binary classification output layers because its value translates directly into calibrated probabilities. The Tanh function, f(x) = (e^x - e^(-x)) / (e^x + e^(-x)), maps real inputs into a symmetric range between -1 and 1. Tanh is generally preferred over Sigmoid in hidden layers because it is zero-centered, ensuring mean activation values remain close to zero and avoiding zig-zagging gradient dynamics during backpropagation. However, both functions saturate at extreme positive and negative inputs, producing near-zero derivatives that cause severe vanishing gradient problems."
+  },
+  {
+    "question": "What is the Softmax Activation Function?",
+    "keywords": [
+      "softmax",
+      "softmax function",
+      "multiclass probability",
+      "normalized exponential",
+      "softmax activation"
+    ],
+    "answer": "The Softmax Activation Function is a mathematical operation applied to the final output layer of multi-class classification neural networks to convert unbounded raw real-valued logits into a valid, normalized probability distribution. Given a vector of K real-valued scores, Softmax computes the standard exponential of each element and divides it by the sum of exponentials across all classes. This guarantees two essential properties: every individual output probability is strictly bounded between 0 and 1, and the sum of all class probabilities equals exactly 1.0. Softmax functions as a multi-dimensional generalization of the logistic sigmoid function. During inference, the predicted class is chosen via argmax, while during training, Softmax is paired with Categorical Cross-Entropy loss to backpropagate error gradients and adjust network weights efficiently."
+  },
+  {
+    "question": "How does the Backpropagation algorithm work?",
+    "keywords": [
+      "backpropagation",
+      "chain rule",
+      "gradient calculation",
+      "backward pass",
+      "forward pass",
+      "how backpropagation works"
+    ],
+    "answer": "Backpropagation (backward propagation of errors) is the fundamental algorithm used to train artificial neural networks by computing the exact partial derivatives of the loss function with respect to every weight and bias parameter in the network. It operates in two phases: Forward Pass and Backward Pass. In the forward pass, input data propagates through successive network layers to generate predictions, which are compared against true ground-truth targets to calculate a loss score. In the backward pass, backpropagation utilizes the calculus Chain Rule to traverse backward from the output layer to the earliest input layer, calculating error gradients systematically. By storing intermediate layer activations computed during the forward pass, it avoids redundant computations and calculates exact gradients in linear computational time. These computed gradients are subsequently utilized by optimizers like SGD or Adam to update parameter weights."
+  },
+  {
+    "question": "What is the Adam Optimizer and how does it work?",
+    "keywords": [
+      "adam optimizer",
+      "adaptive moment estimation",
+      "adam",
+      "learning rate optimizer",
+      "rmsprop",
+      "momentum"
+    ],
+    "answer": "Adam (Adaptive Moment Estimation) is the most popular optimization algorithm in modern deep learning, combining the advantages of two proven optimizers: AdaGrad (which handles sparse gradients) and RMSprop (which handles non-stationary objectives). Adam computes individual adaptive learning rates for each network parameter by tracking running exponential moving averages of both past gradients (the first moment, representing momentum) and past squared gradients (the second raw moment, representing uncentered variance). To counteract the initial bias toward zero during early training steps, Adam incorporates mathematical bias-correction terms. This allows Adam to take larger steps for parameters with infrequent updates and smaller, controlled steps for parameters with noisy, volatile gradients. With default hyperparameters (beta1=0.9, beta2=0.999, epsilon=1e-8), Adam converges rapidly and robustly across diverse deep architectures."
+  },
+  {
+    "question": "What is Stochastic Gradient Descent (SGD) with Momentum?",
+    "keywords": [
+      "sgd with momentum",
+      "momentum",
+      "stochastic gradient descent momentum",
+      "accelerated gradient",
+      "nesterov"
+    ],
+    "answer": "Stochastic Gradient Descent (SGD) with Momentum is an enhanced optimization technique that accelerates SGD convergence and dampens erratic oscillations, particularly in ravines—surfaces where the landscape curves much more steeply in one dimension than another. Standard SGD updates weights solely based on the current mini-batch gradient, causing it to bounce erratically across steep ravines while making agonizingly slow progress along the shallow ravine floor toward the optimum. Momentum introduces an analogy from classical physics: it adds a fraction (gamma, typically 0.9) of the previous step's update vector to the current gradient update, accumulating velocity in directions of consistent gradient descent while canceling out opposing oscillatory fluctuations. Nesterov Accelerated Gradient (NAG) further refines this by computing the gradient lookahead step, improving convergence speed and stability."
+  },
+  {
+    "question": "What is Dropout in Deep Learning?",
+    "keywords": [
+      "dropout",
+      "dropout regularization",
+      "co-adaptation",
+      "neural network regularization",
+      "prevent overfitting dropout"
+    ],
+    "answer": "Dropout is an effective and computationally inexpensive regularization technique designed to prevent overfitting in deep neural networks. During each forward training pass, Dropout randomly deactivates (sets to zero) a predefined fraction of hidden neurons (commonly 20% to 50%) along with their incoming and outgoing connections based on a Bernoulli distribution. By randomly muting neurons, Dropout prevents co-adaptation—a scenario where specific neurons rely excessively on the outputs of specific neighboring units to correct errors. Instead, individual neurons are forced to learn robust, self-reliant feature representations that are useful in varied random contexts. Conceptually, Dropout can be viewed as training an exponential ensemble of thinned sub-networks that share weights. During inference, all neurons remain active, and weights are scaled down proportionally to match expected training activations."
+  },
+  {
+    "question": "What is Batch Normalization and how does it help training?",
+    "keywords": [
+      "batch normalization",
+      "batchnorm",
+      "internal covariate shift",
+      "normalization layer",
+      "stable training"
+    ],
+    "answer": "Batch Normalization (BatchNorm) is a transformative layer technique introduced by Ioffe and Szegedy that accelerates neural network training and stabilizes deep architectures. During training, BatchNorm standardizes the inputs of each hidden layer across the current mini-batch so that activations have a mean of zero and variance of one. To ensure the network retains representational capacity and can restore original activations if beneficial, it introduces two learnable parameters: gamma (scale) and beta (shift). BatchNorm resolves the problem of internal covariate shift, where changes in early layer weights continuously alter the distribution of inputs feeding into later layers. Benefits include permitting significantly higher learning rates, dampening sensitivity to parameter initialization, acting as a mild regularizer by injecting mini-batch noise, and virtually eliminating vanishing gradients."
+  },
+  {
+    "question": "What is a Convolutional Neural Network (CNN)?",
+    "keywords": [
+      "convolutional neural network",
+      "cnn",
+      "computer vision",
+      "convnet",
+      "image classification",
+      "feature maps"
+    ],
+    "answer": "A Convolutional Neural Network (CNN) is a specialized deep neural network architecture designed to process grid-structured topological data such as images, video frames, and spectrograms. Unlike standard fully connected networks which flatten spatial images and disregard geometric relationships, CNNs exploit spatial locality and translation invariance through two key architectural mechanisms: local receptive fields and shared weight kernels. A standard CNN architecture consists of stacked Convolutional Layers (which slide learnable filters across inputs to extract feature maps like edges, textures, and object parts), Activation Functions (typically ReLU), and Pooling Layers (which reduce spatial dimensions). At the end of the feature extraction pipeline, flattened representations pass through Fully Connected Layers to output classification or regression predictions. CNNs represent the standard backbone of modern computer vision."
+  },
+  {
+    "question": "How do Convolutional Layers and Kernels work?",
+    "keywords": [
+      "convolutional layers",
+      "kernels",
+      "convolution",
+      "stride",
+      "padding",
+      "feature map",
+      "filter"
+    ],
+    "answer": "Convolutional Layers are the core building blocks of Convolutional Neural Networks, responsible for extracting local spatial features from input data. A convolutional layer applies small, learnable multidimensional weight matrices called kernels or filters (typically 3x3 or 5x5 pixels) that slide across the input width and height. At each spatial position, the kernel computes element-wise multiplications with the overlapping input patch and sums the results with a bias to produce a single scalar output in the resulting feature map. Key operational hyperparameters include Stride (the step size the filter moves across the image) and Padding (adding borders of zeros to preserve spatial output dimensions, known as 'Same' padding). By sharing kernel weights across the entire input, convolutional layers achieve translation invariance and drastically reduce parameter count compared to fully connected layers."
+  },
+  {
+    "question": "What are Pooling Layers (Max Pooling vs Average Pooling)?",
+    "keywords": [
+      "pooling layers",
+      "max pooling",
+      "average pooling",
+      "downsampling",
+      "subsampling",
+      "spatial reduction"
+    ],
+    "answer": "Pooling Layers are non-learnable downsampling layers inserted between successive convolutional layers in Convolutional Neural Networks to reduce the spatial height and width of feature maps. By condensing spatial resolutions, pooling decreases the number of parameters and computational operations in downstream layers, providing a degree of rotational and translational invariance while mitigating overfitting. The two dominant pooling methods are Max Pooling and Average Pooling. Max Pooling slides a small window (typically 2x2 with stride 2) across the feature map and retains only the maximum activation value in each patch, preserving the most prominent visual features such as edges and textures. Average Pooling computes the arithmetic mean of activations within the window, producing smoother downsampled representations. Modern architectures increasingly utilize Max Pooling or strided convolutions."
+  },
+  {
+    "question": "What is Transfer Learning in Deep Learning?",
+    "keywords": [
+      "transfer learning",
+      "pre-trained models",
+      "fine-tuning",
+      "feature extraction",
+      "imagenet",
+      "transfer knowledge"
+    ],
+    "answer": "Transfer Learning is a powerful machine learning technique where knowledge gained from training a deep neural network on a massive source task (such as ImageNet with millions of images or web-scale text corpora) is transferred and reused to solve a different but related target task. Rather than training a complex model from scratch—which demands enormous computational resources, weeks of GPU time, and vast labeled datasets—practitioners take a pre-trained model and adapt it. Workflows include: 1. Feature Extraction: freezing the pre-trained feature extraction backbone and replacing only the final classification head with new layers trained on target data. 2. Fine-Tuning: unfreezing higher layers of the pre-trained network and training them with a very small learning rate to adapt specialized features. Transfer learning dramatically reduces training time and yields high accuracy even on tiny target datasets."
+  },
+  {
+    "question": "What is Data Augmentation in Computer Vision?",
+    "keywords": [
+      "data augmentation",
+      "image augmentation",
+      "synthetic data",
+      "rotation",
+      "flipping",
+      "prevent overfitting vision"
+    ],
+    "answer": "Data Augmentation is a crucial regularization and preprocessing strategy in computer vision that artificially expands the size and diversity of training datasets by applying realistic, label-preserving transformations to existing training images. Because deep neural networks require massive amounts of diverse visual data to generalize well, data augmentation forces models to become invariant to irrelevant real-world environmental variations. Common spatial transformations include random horizontal and vertical flipping, rotations, cropping, zooming, shearing, and translations. Color and photometric augmentations include jittering brightness, contrast, saturation, and hue, as well as applying Gaussian blur and Cutout/Mixup techniques (blending multiple images together). Applied dynamically on-the-fly during mini-batch generation, data augmentation prevents network memorization, reduces overfitting, and boosts model robustness on real-world test inputs."
+  },
+  {
+    "question": "What is a Recurrent Neural Network (RNN)?",
+    "keywords": [
+      "recurrent neural network",
+      "rnn",
+      "sequential data",
+      "hidden state",
+      "temporal modeling",
+      "time series rnn"
+    ],
+    "answer": "A Recurrent Neural Network (RNN) is a class of artificial neural networks designed specifically for processing sequential and temporal data such as time series, natural language text, speech, and DNA sequences. Unlike standard feedforward networks that assume all inputs are independent, RNNs process sequential elements step-by-step while maintaining an internal hidden state that functions as a recurrent memory. At each time step t, the RNN computes its current hidden state based on both the current input vector and the hidden state from the previous time step t-1, passing historical context forward through time. However, training standard RNNs via Backpropagation Through Time (BPTT) suffers from severe vanishing and exploding gradient problems across long sequences, making them unable to retain long-range temporal dependencies and paving the way for LSTMs and Transformers."
+  },
+  {
+    "question": "What is a Long Short-Term Memory (LSTM) network?",
+    "keywords": [
+      "lstm",
+      "long short-term memory",
+      "forget gate",
+      "input gate",
+      "output gate",
+      "cell state",
+      "gated rnn"
+    ],
+    "answer": "A Long Short-Term Memory (LSTM) network is an advanced recurrent neural network architecture designed by Hochreiter and Schmidhuber specifically to resolve the vanishing gradient problem and capture long-range temporal dependencies in sequential data. LSTMs replace standard recurrent hidden units with complex memory blocks governed by three mathematical gating mechanisms and an explicit Cell State. The Forget Gate determines which historical information to discard from the cell state using a sigmoid function. The Input Gate decides which novel information to store by combining sigmoid and tanh activations. The Cell State carries information unchanged down the temporal sequence through additive updates, preventing gradient decay. Finally, the Output Gate controls which portion of the internal cell state is emitted as the hidden state output. LSTMs revolutionized speech recognition, translation, and time series forecasting."
+  },
+  {
+    "question": "What is a Gated Recurrent Unit (GRU)?",
+    "keywords": [
+      "gru",
+      "gated recurrent unit",
+      "update gate",
+      "reset gate",
+      "lstm vs gru",
+      "recurrent architecture"
+    ],
+    "answer": "A Gated Recurrent Unit (GRU) is a streamlined variant of the LSTM network introduced by Cho et al. that efficiently models sequential dependencies while requiring fewer computational parameters and training time. While an LSTM employs three gates (forget, input, output) and maintains distinct cell and hidden states, a GRU merges these into a unified hidden state governed by only two gates: the Reset Gate and the Update Gate. The Reset Gate determines how much past historical information should be forgotten when computing candidate state activations. The Update Gate simultaneously handles forget and input operations, dictating the proportion of previous hidden state to retain versus new candidate activations to blend in. Due to its reduced structural complexity, GRUs train faster than LSTMs, require less memory, and frequently achieve comparable or superior performance on smaller sequential datasets."
+  },
+  {
+    "question": "What is a Sequence-to-Sequence (Seq2Seq) Model?",
+    "keywords": [
+      "sequence-to-sequence",
+      "seq2seq",
+      "encoder-decoder",
+      "machine translation",
+      "encoder",
+      "decoder"
+    ],
+    "answer": "A Sequence-to-Sequence (Seq2Seq) Model is an architectural framework designed to map an input sequence of arbitrary length to an output sequence of potentially different length, enabling breakthroughs in machine translation, text summarization, conversational chatbots, and speech-to-text. Seq2Seq models consist of two main components: an Encoder and a Decoder. The Encoder processes the input sequence token by token, compressing all semantic information into a fixed-length numerical context vector (the final hidden state). The Decoder takes this context vector as its initial state and autoregressively generates the target output sequence one token at a time, feeding its own previous prediction as input for the next step. However, compressing long input sequences into a single fixed-length vector created an information bottleneck, which catalyzed the development of the Attention Mechanism."
+  },
+  {
+    "question": "What is the Attention Mechanism in Deep Learning?",
+    "keywords": [
+      "attention mechanism",
+      "attention",
+      "bahdanau attention",
+      "context vector",
+      "alignment score",
+      "seq2seq attention"
+    ],
+    "answer": "The Attention Mechanism is a revolutionary deep learning innovation introduced by Bahdanau et al. that solved the information bottleneck in sequence-to-sequence encoder-decoder models. In traditional Seq2Seq architectures, the encoder was forced to compress an entire input sentence into a single fixed-size context vector, causing severe performance degradation on long sequences. The attention mechanism removes this limitation by allowing the decoder to dynamically attend to all intermediate encoder hidden states at every decoding time step. It computes similarity alignment scores between the current decoder state and every encoder token representation, normalizes these scores into attention weights using Softmax, and calculates a dynamic, weighted-sum context vector. This allows the model to focus specifically on the most relevant source words when generating each output word, laying the conceptual foundation for modern Transformer models."
+  },
+  {
+    "question": "What is Self-Attention and Multi-Head Attention?",
+    "keywords": [
+      "self-attention",
+      "multi-head attention",
+      "query key value",
+      "scaled dot-product",
+      "qkv",
+      "attention layers"
+    ],
+    "answer": "Self-Attention (Scaled Dot-Product Attention) and Multi-Head Attention are the core computational engines of the Transformer architecture. Self-attention enables a sequence of tokens to interact with itself, allowing each word to calculate its contextual relationship with every other word in the sequence simultaneously, regardless of their distance. For each token, the model generates three vectors: Query (Q), Key (K), and Value (V) via linear projections. The attention score is computed by taking the dot product of Q and K, scaling by the square root of key dimension dk, applying Softmax, and multiplying by V: Attention(Q, K, V) = softmax(QK^T / sqrt(dk))V. Multi-Head Attention splits Q, K, and V into multiple projection subspaces (heads) processed in parallel, allowing the model to simultaneously attend to syntax, semantics, and coreference relationships across different positions."
+  },
+  {
+    "question": "What is the Transformer Architecture in Deep Learning?",
+    "keywords": [
+      "transformer",
+      "transformers",
+      "attention is all you need",
+      "transformer architecture",
+      "encoder decoder transformer"
+    ],
+    "answer": "The Transformer is a landmark deep learning architecture introduced in the 2017 paper 'Attention Is All You Need' by Vaswani et al. that completely replaced recurrence and convolutions with self-attention mechanisms for sequential processing. By eliminating sequential step-by-step recurrence, Transformers process all tokens in a sequence simultaneously in parallel, enabling massive GPU acceleration and training on vast web-scale corpora. A standard Transformer consists of an Encoder stack and a Decoder stack. Each encoder block contains Multi-Head Self-Attention followed by a position-wise Feed-Forward Network, wrapped in residual skip connections and Layer Normalization. Decoders include masked self-attention to prevent looking at future tokens, plus cross-attention over encoder outputs. Because Transformers lack inherent recurrence, Positional Encodings are added to input embeddings to preserve word order. Transformers power all modern LLMs including BERT, GPT, and Claude."
+  },
+  {
+    "question": "What is BERT and how does it work?",
+    "keywords": [
+      "bert",
+      "masked language model",
+      "bidirectional encoder",
+      "transformer encoder",
+      "what is bert",
+      "nlp bert"
+    ],
+    "answer": "BERT (Bidirectional Encoder Representations from Transformers) is a groundbreaking NLP model introduced by Google that pioneered bidirectional contextual pre-training. Unlike previous language models that processed text left-to-right or right-to-left sequentially, BERT utilizes the Transformer Encoder stack to look at context from both directions simultaneously across all layers. BERT is pre-trained on massive unlabeled corpora using two self-supervised tasks: 1. Masked Language Modeling (MLM), where 15% of words are masked and the model learns to predict them from surrounding bidirectional context, and 2. Next Sentence Prediction (NSP), predicting whether two sentences naturally follow each other. Once pre-trained, BERT's universal semantic representations can be fine-tuned with just one additional output layer for tasks like sentiment analysis, question answering, and named entity recognition, establishing historical state-of-the-art benchmarks."
+  },
+  {
+    "question": "What is GPT (Generative Pre-trained Transformer)?",
+    "keywords": [
+      "gpt",
+      "generative pre-trained transformer",
+      "autoregressive",
+      "decoder-only",
+      "gpt-3",
+      "gpt-4",
+      "causal language model"
+    ],
+    "answer": "GPT (Generative Pre-trained Transformer) is a family of autoregressive foundational language models developed by OpenAI based on the decoder-only Transformer architecture. Unlike bidirectional models like BERT, GPT is trained as a causal language model: it predicts the next token in a sequence given all preceding tokens, enforcing causality through masked self-attention to prevent the model from attending to future tokens. Pre-trained on trillions of internet tokens via self-supervised next-token prediction, GPT models acquire extensive world knowledge and syntactic reasoning capabilities. As model scale, parameter count, and dataset volume expanded from GPT-2 to GPT-3 and GPT-4, these models demonstrated emergent capabilities like few-shot, one-shot, and zero-shot in-context learning, answering questions and writing code without task-specific fine-tuning. GPT models form the technological backbone of ChatGPT."
+  },
+  {
+    "question": "What are Large Language Models (LLMs)?",
+    "keywords": [
+      "large language models",
+      "llm",
+      "llms",
+      "generative ai",
+      "foundation models",
+      "scaling laws"
+    ],
+    "answer": "Large Language Models (LLMs) are massive deep learning models, typically based on Transformer architectures, trained on immense web-scale datasets containing hundreds of billions to trillions of textual tokens. Ranging from billions to hundreds of billions of parameters, LLMs learn complex statistical distributions of human language and broad real-world knowledge. Guided by empirical Neural Scaling Laws, increasing compute budget, dataset volume, and parameter scale yields smooth performance improvements alongside emergent capabilities such as multi-step reasoning, mathematical problem-solving, and code synthesis. The modern LLM lifecycle consists of self-supervised pre-training, supervised instruction fine-tuning (SFT) to teach conversational alignment, and Reinforcement Learning from Human Feedback (RLHF) or Direct Preference Optimization (DPO) to ensure safety and helpfulness. Leading examples include GPT-4, Llama 3, Gemini, Claude, and Mistral."
+  },
+  {
+    "question": "What is Fine-Tuning vs Retrieval-Augmented Generation (RAG)?",
+    "keywords": [
+      "fine-tuning vs rag",
+      "rag",
+      "retrieval-augmented generation",
+      "fine-tuning",
+      "rag vs fine tuning",
+      "llm adaptation"
+    ],
+    "answer": "Fine-Tuning and Retrieval-Augmented Generation (RAG) are two complementary paradigms for adapting general-purpose Large Language Models (LLMs) to specialized domains. Fine-Tuning updates model parameter weights by training on curated, task-specific question-answer datasets; it is ideal for teaching models new stylistic formats, structured syntax, tone, and specific behavioral guidelines. However, fine-tuning is computationally expensive and risks hallucination when facts change. RAG keeps base model weights completely frozen and dynamically retrieves relevant external proprietary documents from a vector database at inference time, injecting them directly into the user prompt as grounding context. RAG is significantly cheaper, provides source citations, virtually eliminates factual hallucinations, and allows instant updates simply by updating the external database. Organizations frequently combine both: using RAG for dynamic real-time knowledge retrieval and fine-tuning for domain-specific formatting and reasoning."
+  },
+  {
+    "question": "What is Parameter-Efficient Fine-Tuning (PEFT and LoRA)?",
+    "keywords": [
+      "peft",
+      "lora",
+      "low-rank adaptation",
+      "parameter efficient",
+      "qlora",
+      "fine-tuning lora"
+    ],
+    "answer": "Parameter-Efficient Fine-Tuning (PEFT) is a collection of techniques designed to adapt massive Large Language Models to specific downstream tasks while updating only a tiny fraction (typically under 1%) of total network parameters, drastically cutting memory and computational requirements. The most prominent PEFT technique is LoRA (Low-Rank Adaptation). LoRA freezes the original pre-trained weight matrices W and decomposes weight update matrices into two low-rank matrices A and B (where delta_W = B * A). If an original weight matrix has dimensions 4096x4096, full fine-tuning requires updating 16.7 million parameters, whereas LoRA with rank r=8 requires updating only 65,536 parameters. QLoRA quantizes the frozen base model to 4-bit precision while retaining 16-bit LoRA adapters, allowing practitioners to fine-tune 70-billion-parameter models on single consumer-grade GPUs without performance degradation."
+  },
+  {
+    "question": "What is Prompt Engineering in AI?",
+    "keywords": [
+      "prompt engineering",
+      "chain of thought",
+      "few-shot prompting",
+      "zero-shot",
+      "system prompts",
+      "prompting"
+    ],
+    "answer": "Prompt Engineering is the practice of systematically structuring, designing, and refining input text queries provided to Large Language Models (LLMs) to reliably elicit accurate, optimal, and structured responses without altering model parameters. Because LLMs are sensitive to input framing, effective prompt engineering significantly improves reasoning quality. Key techniques include: 1. Zero-Shot Prompting: querying the model directly without examples. 2. Few-Shot In-Context Prompting: providing demonstrations of input-output pairs to guide format and behavior. 3. Chain-of-Thought (CoT) Prompting: instructing the model to 'think step by step', which unlocks multi-step mathematical and logical reasoning by decomposing complex problems into sequential sub-tasks. 4. Role Prompting: assigning persona and context. 5. Output Constraints: requesting strict JSON or Markdown formats. Prompt engineering forms the foundational bridge connecting user intent with foundational AI capabilities."
+  },
+  {
+    "question": "What is Word2Vec and how do word embeddings work?",
+    "keywords": [
+      "word2vec",
+      "word embeddings",
+      "skip-gram",
+      "cbow",
+      "semantic embeddings",
+      "continuous bag of words"
+    ],
+    "answer": "Word2Vec is a foundational neural embedding technique developed by Mikolov et al. at Google that transforms categorical words into dense, continuous real-valued vectors in a shared geometric semantic space. In traditional one-hot representations, vectors are high-dimensional, sparse, and possess zero semantic relationship between synonyms. Word2Vec resolves this by training a shallow neural network on large corpora based on the distributional hypothesis: words appearing in similar contexts share similar meanings. It utilizes two architectures: Continuous Bag of Words (CBOW), which predicts a target word from surrounding context words, and Skip-Gram, which predicts surrounding context words given a target word. Word2Vec embeddings capture rich linear semantic relationships, famously demonstrating vector arithmetic such as: vector('King') - vector('Man') + vector('Woman') approximately equals vector('Queen')."
+  },
+  {
+    "question": "What are Vector Embeddings and Vector Databases?",
+    "keywords": [
+      "vector embeddings",
+      "vector databases",
+      "vector db",
+      "pinecone",
+      "chromadb",
+      "semantic search",
+      "cosine distance"
+    ],
+    "answer": "Vector Embeddings are dense numerical representations of unstructured data (such as sentences, paragraphs, images, or audio) generated by deep learning models, mapping raw content into a high-dimensional continuous mathematical space where semantic similarity corresponds to geometric proximity. A Vector Database (such as Pinecone, Chroma, Milvus, or Qdrant) is a specialized storage and indexing system engineered to manage, index, and query billions of high-dimensional vectors at millisecond latency. Unlike relational databases that perform exact keyword matches, vector databases perform Approximate Nearest Neighbor (ANN) search using similarity metrics like Cosine Similarity, Dot Product, or Euclidean Distance. Using indexing algorithms like Hierarchical Navigable Small World (HNSW) and Inverted File Indexing (IVF), vector databases power modern Semantic Search, Recommendation Systems, and Retrieval-Augmented Generation (RAG) pipelines."
+  },
+  {
+    "question": "What is a Generative Adversarial Network (GAN)?",
+    "keywords": [
+      "generative adversarial network",
+      "gan",
+      "generator",
+      "discriminator",
+      "adversarial training",
+      "generative models"
+    ],
+    "answer": "A Generative Adversarial Network (GAN) is an ingenious generative deep learning framework conceived by Ian Goodfellow et al. consisting of two neural networks competing against each other in a zero-sum game: the Generator and the Discriminator. The Generator takes random mathematical noise vectors and attempts to synthesize realistic synthetic data samples (such as photorealistic human faces). The Discriminator functions as an evaluator, receiving both real training samples and synthetic generator samples, striving to classify whether each sample is authentic or fake. As training progresses, the Generator learns to produce increasingly indistinguishable counterfeits, while the Discriminator becomes an increasingly discerning critic. The minimax game reaches a Nash equilibrium when the generator produces samples so realistic that the discriminator has a random 50% guessing accuracy. GANs unlocked breakthroughs in image synthesis, deepfakes, and super-resolution."
+  },
+  {
+    "question": "What is a Variational Autoencoder (VAE)?",
+    "keywords": [
+      "variational autoencoder",
+      "vae",
+      "latent space",
+      "reparameterization trick",
+      "kl divergence",
+      "autoencoder"
+    ],
+    "answer": "A Variational Autoencoder (VAE) is a directed probabilistic generative model that combines neural networks with Bayesian statistical inference. Unlike standard autoencoders which map inputs to discrete, unconstrained deterministic vectors that often produce gap-filled latent spaces, a VAE maps input data to continuous probability distributions (mean and variance) in latent space. The network consists of an Encoder, which outputs Gaussian distribution parameters, and a Decoder, which reconstructs samples drawn from that latent distribution back into data space. The objective loss function balances Reconstruction Loss (ensuring faithful reproduction) with Kullback-Leibler (KL) Divergence (forcing latent distributions to match a standard normal prior). To enable gradient backpropagation through stochastic sampling, VAEs utilize the ingenious Reparameterization Trick, decoupling random noise from model parameters to permit smooth end-to-end training."
+  },
+  {
+    "question": "What are Diffusion Models in Generative AI?",
+    "keywords": [
+      "diffusion models",
+      "diffusion",
+      "score-based models",
+      "stable diffusion",
+      "denoising",
+      "generative ai images"
+    ],
+    "answer": "Diffusion Models are state-of-the-art generative deep learning models that generate high-fidelity synthetic data, such as images and audio, by learning to reverse a gradual data corruption process. Training consists of two phases: 1. Forward Diffusion Process: Gaussian noise is added incrementally to training images across hundreds of discrete time steps until the original data degenerates into pure random isotropic noise. 2. Reverse Denoising Process: a neural network (typically a U-Net architecture augmented with cross-attention) is trained to predict and subtract the added noise at each step, reconstructing the original image. During inference, the model begins with pure random noise and iteratively denoises it step-by-step into crisp photorealistic images, often conditioned on textual prompts. Diffusion models power modern generative AI systems including Stable Diffusion, Midjourney, and DALL-E 3."
+  },
+  {
+    "question": "What is a Markov Decision Process (MDP) in RL?",
+    "keywords": [
+      "markov decision process",
+      "mdp",
+      "reinforcement learning mdp",
+      "states actions rewards",
+      "markov property"
+    ],
+    "answer": "A Markov Decision Process (MDP) is a rigorous mathematical framework used to formalize sequential decision-making problems in Reinforcement Learning where outcomes are partly random and partly under the control of a decision-maker. An MDP is formally defined by a 5-tuple: States (S), Actions (A), Transition Probabilities (P), Reward Function (R), and Discount Factor (gamma). The foundational underpinning of an MDP is the Markov Property: the conditional probability distribution of future states depends strictly on the current state and action, independent of all historical states. The discount factor gamma balances immediate versus long-term rewards. Solving an MDP involves finding an optimal policy—a mapping from states to actions that maximizes cumulative discounted return. Fundamental solution techniques include Dynamic Programming, Value Iteration, Policy Iteration, and Model-Free Reinforcement Learning algorithms like Q-Learning."
+  },
+  {
+    "question": "What is Q-Learning in Reinforcement Learning?",
+    "keywords": [
+      "q-learning",
+      "q learning",
+      "temporal difference",
+      "bellman equation",
+      "off-policy",
+      "q-table"
+    ],
+    "answer": "Q-Learning is a foundational model-free, off-policy temporal difference reinforcement learning algorithm used to find an optimal action-selection policy. It operates by iteratively updating a lookup table of state-action values known as the Q-Table, where Q(s, a) represents the expected cumulative future reward of taking action a in state s and following the optimal policy thereafter. The core update rule is derived directly from the Bellman Equation: Q(s, a) = Q(s, a) + alpha * [r + gamma * max_a' Q(s', a') - Q(s, a)], where alpha is the learning rate, r is the immediate reward, gamma is the discount factor, and s' is the subsequent state. Q-learning is an 'off-policy' algorithm because it updates value estimates assuming optimal greedy future actions regardless of the exploratory policy (such as epsilon-greedy) currently executed by the agent."
+  },
+  {
+    "question": "What is a Deep Q-Network (DQN)?",
+    "keywords": [
+      "deep q-network",
+      "dqn",
+      "deep reinforcement learning",
+      "experience replay",
+      "target network",
+      "atari dqn"
+    ],
+    "answer": "A Deep Q-Network (DQN) is a groundbreaking deep reinforcement learning algorithm developed by DeepMind that revolutionized the field by playing Atari games directly from raw screen pixels at superhuman levels. Traditional Q-learning relies on tabular Q-tables, which become mathematically intractable in environments with large or continuous state spaces. DQN resolves this by replacing the lookup table with a Deep Convolutional Neural Network that approximates the Q-value function. To stabilize deep neural network training in non-stationary RL environments, DQN introduces two critical innovations: 1. Experience Replay: storing past transitions (s, a, r, s') in a replay buffer and sampling random mini-batches for training to break temporal correlations, and 2. Target Network: maintaining a separate, slowly updated target network to compute stable temporal difference target values."
+  },
+  {
+    "question": "What are Policy Gradient Methods in Reinforcement Learning?",
+    "keywords": [
+      "policy gradient",
+      "reinforce",
+      "policy gradient methods",
+      "continuous action space",
+      "policy optimization"
+    ],
+    "answer": "Policy Gradient Methods are a family of model-free reinforcement learning algorithms that directly parameterize and optimize the policy function itself without necessarily relying on an intermediate value function. Unlike value-based approaches like Q-learning which select actions indirectly by picking the highest Q-value, policy gradient methods model the probability distribution of actions directly as a parameterized neural network pi_theta(a|s). The parameters theta are optimized via gradient ascent using the Policy Gradient Theorem to maximize expected cumulative trajectory return. Key advantages include natural handling of high-dimensional and continuous action spaces (such as robotic joint torques where taking argmax over continuous actions is impossible) and the ability to learn stochastic policies when optimal play demands randomized behaviors. The REINFORCE algorithm serves as the foundational classical policy gradient baseline."
+  },
+  {
+    "question": "What is the Actor-Critic Algorithm in Reinforcement Learning?",
+    "keywords": [
+      "actor-critic",
+      "actor critic",
+      "a2c",
+      "a3c",
+      "advantage actor critic",
+      "policy and value"
+    ],
+    "answer": "The Actor-Critic Algorithm is an advanced hybrid reinforcement learning architecture that combines the strengths of both value-based and policy-based methods while eliminating their individual limitations. It divides the learning agent into two cooperating neural network components: the Actor and the Critic. The Actor represents the policy network pi(a|s); its role is to observe the current environment state and select an action. The Critic represents the value function V(s); its role is to evaluate the action taken by the actor by computing the TD error or Advantage score (the difference between actual reward plus expected future return versus baseline expected return). The actor uses this feedback to adjust its action probabilities, while the critic refines its value estimates. Famous architectures include Advantage Actor-Critic (A2C), Asynchronous Advantage Actor-Critic (A3C), and Soft Actor-Critic (SAC)."
+  },
+  {
+    "question": "What is Hyperparameter Tuning (Grid Search vs Random Search vs Bayesian)?",
+    "keywords": [
+      "hyperparameter tuning",
+      "grid search",
+      "random search",
+      "bayesian optimization",
+      "optuna",
+      "hyperparameters"
+    ],
+    "answer": "Hyperparameter Tuning is the optimization process of finding the optimal combination of configuration settings (such as learning rate, tree depth, and batch size) that govern algorithm behavior before model training begins. The three primary tuning methodologies are: 1. Grid Search: exhaustively evaluates every possible combination across a predefined discrete grid of values; it is thorough but suffers from combinatorial explosion on larger search spaces. 2. Random Search: samples random combinations from specified parameter distributions; it is substantially more efficient than grid search because it explores a wider variety of unique values for sensitive hyperparameters within the same compute budget. 3. Bayesian Optimization (implemented in Optuna and Hyperopt): models past trial results using Gaussian Processes or Tree-structured Parzen Estimators to intelligently select promising hyperparameter combinations, balancing exploration of unknown areas with exploitation of known high-performing zones."
+  },
+  {
+    "question": "What is Early Stopping in Model Training?",
+    "keywords": [
+      "early stopping",
+      "patience",
+      "validation loss",
+      "prevent overfitting training",
+      "stopping criteria"
+    ],
+    "answer": "Early Stopping is a simple, effective, and widely employed regularization technique used to halt iterative training of machine learning models before they begin to overfit. During training, error on the training dataset typically declines monotonically with each epoch. However, error on a separate validation dataset decreases initially but eventually reaches a minimum and begins to increase as the model starts memorizing noise and idiosyncratic quirks of the training data. Early stopping continuously monitors this validation loss at the conclusion of each epoch. It utilizes a hyperparameter called Patience—the number of consecutive epochs validation loss is permitted to stagnate or worsen without triggering termination. When patience is exhausted, training halts automatically, and model parameter weights are restored to the checkpoint corresponding to the minimum validation loss."
+  },
+  {
+    "question": "What is Ensemble Learning (Bagging, Boosting, Stacking)?",
+    "keywords": [
+      "ensemble learning",
+      "bagging",
+      "boosting",
+      "stacking",
+      "ensemble models",
+      "blending"
+    ],
+    "answer": "Ensemble Learning is a powerful paradigm in machine learning that combines multiple individual models (base learners) to produce a composite model with superior predictive accuracy, robustness, and stability than any single constituent model could achieve alone. The three primary ensemble paradigms are: 1. Bagging (Bootstrap Aggregating): trains homogeneous models in parallel on independent bootstrap samples of the data and aggregates predictions via majority voting or averaging to reduce model variance (e.g., Random Forest). 2. Boosting: trains homogeneous weak learners sequentially, where each new model focuses explicitly on correcting residual errors made by preceding models to reduce model bias (e.g., XGBoost, LightGBM). 3. Stacking (Stacked Generalization): trains diverse heterogeneous models (e.g., SVM, Random Forest, Neural Network) and feeds their predictions into a meta-model to make final predictions."
+  },
+  {
+    "question": "How do you handle Imbalanced Datasets (SMOTE vs Class Weights)?",
+    "keywords": [
+      "imbalanced datasets",
+      "smote",
+      "class weights",
+      "undersampling",
+      "oversampling",
+      "handling imbalanced data"
+    ],
+    "answer": "Handling Imbalanced Datasets—where one target class dramatically outnumbers another (e.g., fraud detection or rare medical conditions)—is essential because standard algorithms maximize raw accuracy, resulting in models that predict only the majority class. Effective remediation strategies span data-level and algorithm-level solutions: 1. SMOTE (Synthetic Minority Over-sampling Technique): synthetically generates novel minority instances by interpolating feature values between k-nearest minority neighbors rather than simple duplication. 2. Random Undersampling: downsamples majority class instances, though it risks discarding valuable information. 3. Class Weighting / Cost-Sensitive Learning: modifies the loss function to penalize misclassifications of minority instances proportionally higher based on inverse class frequencies. 4. Resampling Thresholds: tuning probability decision thresholds via Precision-Recall curves. Evaluating models using balanced metrics like PR-AUC and F1-score rather than accuracy is mandatory."
+  },
+  {
+    "question": "What is Data Leakage in Machine Learning?",
+    "keywords": [
+      "data leakage",
+      "target leakage",
+      "train test contamination",
+      "leakage in ml",
+      "data snooping"
+    ],
+    "answer": "Data Leakage (target leakage or train-test contamination) occurs when information from outside the training dataset is inadvertently utilized to train a machine learning model, creating overly optimistic performance during training and validation that collapses upon production deployment. Common forms of data leakage include: 1. Preprocessing Leakage: calculating normalization statistics (mean, variance) or imputing missing values across the entire dataset before splitting into train and test sets, allowing test data properties to leak into training. 2. Temporal Leakage: using future information to predict past events in time series data rather than strictly respecting chronological splits. 3. Duplicate Record Leakage: identical samples appearing in both train and validation sets due to non-stratified sampling. Mitigating data leakage requires strictly partitioning datasets before any transformations and executing all preprocessing inside encapsulated Pipeline objects."
+  },
+  {
+    "question": "What is Concept Drift and Covariate Shift?",
+    "keywords": [
+      "concept drift",
+      "covariate shift",
+      "data drift",
+      "distribution shift",
+      "model degradation"
+    ],
+    "answer": "Concept Drift and Covariate Shift are two primary forms of distribution shift that degrade machine learning model performance in production over time as real-world environments evolve. Covariate Shift occurs when the distribution of input features P(X) changes over time, while the conditional probability distribution of the target given the features P(Y|X) remains unchanged (e.g., a credit scoring model encountering a novel customer demographic with identical repayment behaviors). Concept Drift occurs when the underlying statistical relationship between input features and target labels P(Y|X) changes fundamentally over time (e.g., consumer purchasing patterns shifting abruptly during macroeconomic inflation or global pandemics). Detecting drift requires continuous monitoring of feature distributions via statistical tests (Kolmogorov-Smirnov, Population Stability Index) and scheduled automated model retraining on freshly ingested data."
+  },
+  {
+    "question": "What is MLOps (Machine Learning Operations)?",
+    "keywords": [
+      "mlops",
+      "machine learning operations",
+      "ml lifecycle",
+      "ci/cd for ml",
+      "model monitoring",
+      "ml pipeline"
+    ],
+    "answer": "MLOps (Machine Learning Operations) is an engineering discipline that unifies machine learning system development (Dev) with operations (Ops) to standardize, automate, and streamline the continuous deployment, testing, monitoring, and governance of machine learning models in production environments. Unlike traditional software engineering where code is deterministic and static, machine learning systems encompass code, data, and model parameters that evolve dynamically. Core components of an MLOps pipeline include: automated data ingestion and validation, version control for data (DVC) and code (Git), experiment tracking (MLflow, Weights & Biases), automated continuous integration and continuous delivery (CI/CD), model registries for staging and approvals, containerized serving (Docker, Kubernetes), and continuous monitoring for latency, throughput, data drift, and performance degradation. MLOps ensures models remain reliable, scalable, and reproducible in enterprise settings."
+  },
+  {
+    "question": "How do you deploy Machine Learning models into production?",
+    "keywords": [
+      "model deployment",
+      "serving",
+      "rest api",
+      "onnx",
+      "tflite",
+      "docker",
+      "deploying ml models"
+    ],
+    "answer": "Deploying Machine Learning models into production involves packaging trained mathematical weights and inference logic into accessible services for end-users and downstream applications. The primary deployment patterns include: 1. REST / gRPC Microservices: containerizing models using Docker and exposing prediction endpoints via high-performance web frameworks like FastAPI or TorchServe, hosted on scalable cloud clusters like Kubernetes. 2. Embedded / Edge Deployment: converting models into optimized runtime formats like ONNX, TensorFlow Lite (TFLite), or TensorRT to execute low-latency, offline inference on mobile devices, IoT hardware, and browsers. 3. Batch Inference: running scheduled offline jobs via Apache Spark to generate bulk predictions stored in databases. Key production requirements include low latency, horizontal auto-scaling, comprehensive logging, fallback mechanisms, and robust security protocols."
+  },
+  {
+    "question": "What is Model Monitoring in MLOps?",
+    "keywords": [
+      "model monitoring",
+      "drift detection",
+      "latency monitoring",
+      "production monitoring",
+      "evidently ai"
+    ],
+    "answer": "Model Monitoring is the critical operational practice in MLOps of continuously tracking the health, performance, and data integrity of machine learning models in production to detect failures and prevent business degradation. Because models degrade as real-world distributions evolve, monitoring encompasses three distinct operational layers: 1. System Metrics: tracking server latency, CPU/GPU utilization, memory usage, error rates, and request throughput. 2. Data Integrity & Drift: monitoring input features for missing values, schema violations, out-of-range anomalies, and statistical covariate shift against baseline training distributions. 3. Model Performance Metrics: evaluating real-time ground-truth feedback (when available) for drops in accuracy, precision, recall, or calibration error. Monitoring tools like Evidently AI, Prometheus, and Grafana trigger automated alerts and initiate retraining pipelines when anomalies arise."
+  },
+  {
+    "question": "What is Explainable AI (XAI) and SHAP values?",
+    "keywords": [
+      "explainable ai",
+      "xai",
+      "shap",
+      "shapley values",
+      "shap values",
+      "model interpretability",
+      "feature attribution"
+    ],
+    "answer": "Explainable AI (XAI) encompasses methodologies designed to make complex machine learning and deep learning 'black-box' models transparent, interpretable, and understandable to human stakeholders. SHAP (SHapley Additive exPlanations) is a leading game-theoretic framework that computes mathematically consistent feature attribution values based on cooperative game theory (Shapley values). SHAP treats each feature as a player in a game where the model prediction is the total payout. It evaluates the marginal contribution of each feature across all possible permutations and combinations of feature subsets. SHAP uniquely satisfies desirable theoretical properties: local accuracy, missingness, and consistency. It provides both local explanations (explaining why a specific individual applicant was denied credit) and global explanations (ranking overall feature importance across the entire population)."
+  },
+  {
+    "question": "What is LIME in Model Explainability?",
+    "keywords": [
+      "lime",
+      "local interpretable model-agnostic explanations",
+      "local explanations",
+      "lime xai",
+      "model interpretability"
+    ],
+    "answer": "LIME (Local Interpretable Model-agnostic Explanations) is a prominent explainability framework introduced by Ribeiro et al. that explains individual predictions made by any complex black-box machine learning classifier or regressor. While a complex model's global decision boundary across the entire feature space may be hopelessly non-linear and intricate, LIME operates on the premise that any complex boundary can be locally approximated by an interpretable linear model in the immediate neighborhood of a specific prediction. To explain a sample, LIME generates perturbed variations around that point, collects predictions for these perturbations from the black-box model, weights the instances by their proximity to the original sample, and fits a simple, interpretable linear regression or decision tree model. LIME yields clear local feature attributions across tabular, text, and image data."
+  },
+  {
+    "question": "What is Federated Learning and Privacy-Preserving ML?",
+    "keywords": [
+      "federated learning",
+      "privacy-preserving",
+      "differential privacy",
+      "decentralized learning",
+      "fl"
+    ],
+    "answer": "Federated Learning is a decentralized machine learning framework that enables multiple edge devices or institutional data silos (e.g., smartphones, hospitals) to collaboratively train a shared global model without ever sharing their raw private data. In traditional centralized learning, raw data is transmitted to a central server. In federated learning, the central server sends a global model to local client devices. Each device trains the model locally on its private data and computes parameter weight updates. The clients transmit only their encrypted model updates back to the server, which aggregates them into an updated global model using algorithms like Federated Averaging (FedAvg). When paired with Differential Privacy and Secure Multi-Party Computation, federated learning guarantees privacy compliance, making it invaluable for healthcare and mobile keyboards."
+  },
+  {
+    "question": "What is Model Quantization and Pruning?",
+    "keywords": [
+      "model quantization",
+      "pruning",
+      "model compression",
+      "fp16 to int8",
+      "weight pruning",
+      "efficient inference"
+    ],
+    "answer": "Model Quantization and Pruning are the two primary model compression techniques used to reduce the memory footprint, latency, and power consumption of deep neural networks for deployment on edge and mobile devices. Quantization reduces the numerical precision of weights and activation values from standard 32-bit floating point (FP32) to lower-bit representations like 16-bit (FP16), 8-bit integers (INT8), or 4-bit integers. It can be applied post-training (Post-Training Quantization) or during training (Quantization-Aware Training), achieving up to 4x memory reduction and significant inference speedup with negligible accuracy loss. Pruning identifies and eliminates redundant, near-zero weight connections or entire neurons and attention heads (structured pruning), producing sparse neural networks that execute faster on specialized acceleration hardware."
+  },
+  {
+    "question": "What is Time Series Forecasting in Machine Learning?",
+    "keywords": [
+      "time series forecasting",
+      "time series",
+      "arima",
+      "prophet",
+      "seasonality",
+      "trend",
+      "forecasting"
+    ],
+    "answer": "Time Series Forecasting is the predictive modeling discipline of analyzing chronologically ordered data points collected over time intervals to forecast future values. Unlike standard tabular data, time series observations exhibit strong temporal dependencies and autocorrelation. A time series is traditionally decomposed into four components: Trend (long-term progression), Seasonality (repeating cyclical patterns), Cyclic variations, and Irregular Residual Noise. Classical statistical models like ARIMA (Autoregressive Integrated Moving Average) and SARIMA model stationary linear autoregressive relationships. Modern approaches include Facebook Prophet for managing business seasonality and holidays, machine learning regression models (LightGBM with rolling lag and window features), and deep learning architectures like LSTMs, Temporal Convolutional Networks (TCNs), and PatchTST, widely applied in demand forecasting, financial trading, and energy grid load planning."
+  }
+]

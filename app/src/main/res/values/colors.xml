@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand / Primary Colors -->
+    <color name="primary_blue">#0A84FF</color>
+    <color name="primary_blue_dark">#0066CC</color>
+    <color name="primary_teal">#10A37F</color>
+
+    <!-- Chat Message Bubble Colors -->
+    <color name="user_bubble_bg">#0A84FF</color>
+    <color name="user_bubble_text">#FFFFFF</color>
+    <color name="bot_bubble_bg">#F1F3F5</color>
+    <color name="bot_bubble_text">#1F2937</color>
+    <color name="bot_avatar_bg">#10A37F</color>
+
+    <!-- UI Surface & Background -->
+    <color name="chat_bg">#FAFAFA</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="input_bg">#F4F4F6</color>
+    <color name="input_border">#E5E7EB</color>
+    <color name="icon_tint_inactive">#6B7280</color>
+    <color name="icon_tint_active">#0A84FF</color>
+    <color name="send_btn_disabled">#D1D5DB</color>
+    <color name="send_btn_active">#0A84FF</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
+    <color name="divider_color">#E5E7EB</color>
+</resources>
